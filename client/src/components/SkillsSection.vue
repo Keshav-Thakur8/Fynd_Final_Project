@@ -11,7 +11,7 @@
             <div class="skill-box">
               <h6>VueJS</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 65%"></div>
+                <div class="skill-bar-in" style="width: 45%"></div>
               </div>
             </div>
 
@@ -43,7 +43,7 @@
             <div class="skill-box">
               <h6>NodeJs</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 60%"></div>
+                <div class="skill-bar-in" style="width: 50%"></div>
               </div>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default {
 }
 
 .skills .skills-content .skill-box .skill-bar .skill-bar-in {
-  background-color: darkblue;
+  background-color: #1f2235;
   position: absolute;
   left: 0;
   top: 0;

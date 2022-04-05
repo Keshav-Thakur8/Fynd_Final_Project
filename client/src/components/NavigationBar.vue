@@ -82,11 +82,6 @@ nav ul li a {
   text-transform: uppercase;
   margin: 0 10px;
 }
-/* nav ul li a,
-nav ul li a:after,
-nav ul li a:before {
-  transition: all .1s;
-} */
 nav.navbar ul li a {
   position: relative;
 }

@@ -35,7 +35,7 @@
                 <textarea type='text' v-model="message"/>
 
                 <div class="send-btn">
-                    <button type="submit" v-on:click="submitForm()">
+                    <button type="button" v-on:click="submitForm()">
                         <i className='fa fa-paper-plane'/>
                     </button>
 
@@ -61,16 +61,22 @@ export default {
   },
   methods: {
     async submitForm() {
-      console.warn("ContactSection", this.name, this.email, this.message);
-      let result = await axios.post("http://localhost:5000/contact", {
+      const result = await axios.post("/api/contact", {
         name: this.name,
         email: this.email,
         message: this.message
       });
-      console.warn(result);
-      if(result.status == 201) {
-        alert("Message sent successfully")
-        
+      if(this.name.length === 0 || this.email.length === 0 || this.message.length === 0) {
+        alert(result.data.msg);
+      }
+      if(result.status == 200) {
+        alert(result.data.msg);
+
+        this.name = '',
+        this.email = '',
+        this.message = ''
+      } else if(result.status == 400) {
+        alert(result.data.msg);
       }
       
     }

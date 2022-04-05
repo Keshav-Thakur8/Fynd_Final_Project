@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use("/", contactRoute);
+app.use("/api", contactRoute);
 
 const port = process.env.PORT || 4000;
 
@@ -22,3 +22,5 @@ if(process.env.NODE_ENV === "production") {
     })
 }
 app.listen(port, () => console.log(`server running at http://localhost:${port}`));
+
+module.exports = app;

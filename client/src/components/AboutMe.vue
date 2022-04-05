@@ -43,7 +43,7 @@ export default {
   data() {
     return {
       description:
-        "Full stack web developer with background knowledge of MERN stack, along with a knack of building applications with utmost efficiency.",
+        "Full stack web developer with background knowledge of MEVN stack, along with a knack of building applications with utmost efficiency.",
     };
   },
 };
