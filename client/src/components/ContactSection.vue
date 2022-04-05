@@ -81,8 +81,7 @@ export default {
       //failure
       else if(result.status == 400) {
         alert(result.data.msg);
-      }
-      
+      } 
     }
   },
   components: {
@@ -99,14 +98,14 @@ export default {
 }
 
 .parent-container{
-    max-width: 1100px;
-    padding: 10px;
-    display: flex;
-    border-radius: 12px;
-    margin: 0 auto;
+  margin: 0 auto;
     flex-direction: column;
     justify-content: center;
     background-color: #1f2235;
+    max-width: 1100px;
+    padding: 10px;
+    display: flex;
+    border-radius: 12px; 
 }
 
 .parent-container h2{
@@ -165,25 +164,18 @@ input:focus{
 }
 
 form button{
+    background-color: #1f2235;
+    color: white;
+    align-items: center;
+    justify-content: center;
     margin-top: 15px;
     padding: 5px;
     outline: none;
     width: 160px;
     border: 2px solid darkorange;
     font-size: 18px;
-    border-radius: 19px;
-    background-color: #1f2235;
-    color: white;
-    align-items: center;
-    justify-content: center;
+    border-radius: 19px;  
 }
-
-form button:hover{
-    background-color: #1f2235;
-    transition: all ease 1s;
-    border: 2px solid #1f2235;
-}
-
 .img-back{
     flex: 1;
     align-self: center;
@@ -193,7 +185,11 @@ form button:hover{
 form{
     flex: 0.9;
 }
-
+form button:hover{
+    background-color: #1f2235;
+    transition: all ease 1s;
+    border: 2px solid #1f2235;
+}
 button .load{
     width: 100%;
 }
@@ -220,5 +216,4 @@ button .load img{
     opacity: 0;
   }
 }
-
 </style>

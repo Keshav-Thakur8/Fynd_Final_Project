@@ -81,32 +81,27 @@ export default {
   flex: 0 0 50%;
   max-width: 50%;
 }
-
+.parent-container .img img {
+  width: 100%;
+  display: block;
+}
 .aling-items-center {
   align-items: center;
   display: flex;
   flex-direction: row;
   margin: 100px;
 }
-
-.parent-container .img img {
-  width: 100%;
-  display: block;
-}
-
 .parent-container .skills-content .skill-box {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 30px;
 }
-
 .parent-container .skills-content .skill-box h6 {
   font-size: 16px;
   font-weight: 500;
   color: darkorange;
   margin: 0 0 8px;
 }
-
 .parent-container .skills-content .skill-box .skill-bar {
   height: 5px;
   background-color: #eeeeee;

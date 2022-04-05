@@ -113,17 +113,16 @@ export default {
   color: #ffffff;
 }
 
-.highlighted-text {
-  color: darkorange;
-}
-
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
   font-family: "Poppins Light";
 }
-
 .profile-options .highlighted-btn {
+  background-color: darkorange;
+  color: white;
+  align-items: center;
+  justify-content: center;
   padding: 10px 20px;
   font-weight: 500;
   margin-top: 15px;
@@ -131,13 +130,11 @@ export default {
   width: 160px;
   border: 2px solid darkorange;
   font-size: 18px;
-  border-radius: 20px;
-  background-color: darkorange;
-  color: white;
-  align-items: center;
-  justify-content: center;
+  border-radius: 20px; 
 }
-
+.highlighted-text {
+  color: darkorange;
+}
 .profile-options .highlighted-btn:hover {
   color: #1f2235;
   background-color: white;

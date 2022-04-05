@@ -2,7 +2,6 @@
     <div class="about-me-container" id="about">
       <div class="about-me-parent">
         <ScreenHeading title="About Me" subHeading="Why Choose Me?" />
-        <div class="border"></div>
         <div class="about-me-card">
           <div class="about-me-profile"></div>
           <div class="about-me-details">
@@ -71,22 +70,22 @@ export default {
   box-shadow: 0 0px 20px -2px #1f2235;
 }
 .about-me-profile {
-  width: 50%;
-  background-image: url("../assets/me.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 50%;
+  background-image: url("../assets/me.jpg"); 
 }
 .about-me-details {
   width: 48%;
   text-align: justify;
   padding: 30px;
 }
-.about-me-description {
-  font-size: 15px;
-}
 .about-me-highlights {
   margin: 80px 0;
+}
+.about-me-description {
+  font-size: 15px;
 }
 .highlight-heading p {
   font-family: "Poppins Bold";
@@ -95,21 +94,22 @@ export default {
   margin: 0 0 5px 0;
 }
 .highlight {
-  display: flex;
-  align-items: center;
   margin: 5px 0;
   font-size: 18px;
+  display: flex;
+  align-items: center;
 } 
 .about-me-options .highlighted-btn {
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  cursor: pointer;
   padding: 10px 20px;
   margin: 0 0 0 150px;
   background-color: #ff5823;
   border: 2px solid darkorange;
   border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  
 }
 .about-me-options .highlighted-btn:hover {
     background-color: #1f2235;

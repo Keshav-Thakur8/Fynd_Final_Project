@@ -2,7 +2,7 @@
   <header>
     <div class="parent-container">
       <div class="container">
-        <div class="brand-name">
+        <div class="icon">
           <a href="" class="logo">
             <p>PORTFOLIO</p>
           </a>
@@ -46,16 +46,15 @@ header {
   padding: 0px 15px;
   z-index: 11;
 }
-header .fixed {
-  background-color: black;
-  position: fixed;
-}
-
 header .container {
   justify-content: space-between;
   align-items: center;
 }
-header .brand-name a {
+header .fixed {
+  background-color: black;
+  position: fixed;
+}
+header .icon a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
@@ -63,7 +62,6 @@ header .brand-name a {
   text-transform: uppercase;
   position: relative;
 }
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -74,13 +72,13 @@ nav ul li {
   display: inline-block;
 }
 nav ul li a {
-  display: block;
-  padding: 15px;
-  text-decoration: none;
   color: darkorange;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 10px;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
 }
 nav.navbar ul li a {
   position: relative;
@@ -88,7 +86,6 @@ nav.navbar ul li a {
 nav.navbar ul li a {
   transition: all 1s;
 }
-
 nav.navbar ul li a:after {
   text-align: left;
   margin: 0;
