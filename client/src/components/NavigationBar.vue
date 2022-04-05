@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div class="container">
-      <div class="row">
+    <div class="parent-container">
+      <div class="container">
         <div class="brand-name">
           <a href="" class="logo">
             <p>PORTFOLIO</p>
@@ -27,14 +27,14 @@ export default {
 </script>
 
 <style scoped>
-.container {
+.parent-container {
   max-width: 1140px;
   margin: auto;
 }
 p {
     color: darkorange;
 }
-.row {
+.container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -51,7 +51,7 @@ header .fixed {
   position: fixed;
 }
 
-header .row {
+header .container {
   justify-content: space-between;
   align-items: center;
 }

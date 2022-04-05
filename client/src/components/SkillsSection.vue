@@ -1,9 +1,9 @@
 <template>
-  <div class="skills" id="skills">
+  <div class="parent-container" id="skills">
     <div class="section-title">
       <ScreenHeading title="Skills" />
     </div>
-    <div class="container">
+    <div>
       <div class="row aling-items-center">
         <div class="skills-content">
           <div class="row"></div>
@@ -11,39 +11,37 @@
             <div class="skill-box">
               <h6>VueJS</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 45%"></div>
+                <div class="bar" style="width: 45%"></div>
               </div>
             </div>
-
             <div class="skill-box">
               <h6>C++</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 80%"></div>
+                <div class="bar" style="width: 80%"></div>
               </div>
             </div>
             <div class="skill-box">
               <h6>HTML and CSS</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 60%"></div>
+                <div class="bar" style="width: 60%"></div>
               </div>
             </div>
-
             <div class="skill-box">
               <h6>DS and Algorithms</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 70%"></div>
+                <div class="bar" style="width: 70%"></div>
               </div>
             </div>
             <div class="skill-box">
               <h6>JavaScript</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 50%"></div>
+                <div class="bar" style="width: 50%"></div>
               </div>
             </div>
             <div class="skill-box">
               <h6>NodeJs</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 50%"></div>
+                <div class="bar" style="width: 50%"></div>
               </div>
             </div>
           </div>
@@ -67,18 +65,18 @@ export default {
 </script>
 
 <style scoped>
-.skills {
+.parent-container {
   margin-top: 55px;
   padding: 15px 30px;
 }
 
-.skills .skills-content {
+.parent-container .skills-content {
   flex: 0 0 50%;
   max-width: 50%;
   padding-right: 40px;
 }
 
-.skills .img {
+.parent-container .img {
   background-color: blue;
   flex: 0 0 50%;
   max-width: 50%;
@@ -91,31 +89,31 @@ export default {
   margin: 100px;
 }
 
-.skills .img img {
+.parent-container .img img {
   width: 100%;
   display: block;
 }
 
-.skills .skills-content .skill-box {
+.parent-container .skills-content .skill-box {
   flex: 0 0 100%;
   max-width: 100%;
   margin-bottom: 30px;
 }
 
-.skills .skills-content .skill-box h6 {
+.parent-container .skills-content .skill-box h6 {
   font-size: 16px;
   font-weight: 500;
   color: darkorange;
   margin: 0 0 8px;
 }
 
-.skills .skills-content .skill-box .skill-bar {
+.parent-container .skills-content .skill-box .skill-bar {
   height: 5px;
   background-color: #eeeeee;
   position: relative;
 }
 
-.skills .skills-content .skill-box .skill-bar .skill-bar-in {
+.parent-container .skills-content .skill-box .skill-bar .bar {
   background-color: #1f2235;
   position: absolute;
   left: 0;
@@ -123,7 +121,7 @@ export default {
   height: 100%;
 }
 
-.skills .skills-content .skill-box .skill-bar .skill-bar-in span {
+.parent-container .skills-content .skill-box .skill-bar .bar span {
   color: #838383;
   font-size: 16px;
   font-weight: 400;

@@ -1,5 +1,5 @@
 <template>
-  <div class="home-container" id="home">
+  <div class="parent-container" id="home">
     <div class="profile-container">
       <div class="profile-parent">
         <div class="profile-details">
@@ -71,7 +71,7 @@ export default {
 </script>
 
 <style scoped>
-.home-container {
+.parent-container {
   width: 100%;
   background-size: cover;
   background-position: center;

@@ -1,7 +1,7 @@
 <template>
   <div class="main-container" id="contact">
       <ScreenHeading title="Contact Me" subHeading="Keep In Touch" />
-    <div class="central-form">
+    <div class="parent-container">
       <div class="col">
           <h2 className="title">
             <v-typical class="blink"
@@ -22,7 +22,7 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <div class="back-form">
+      <div class="contact-form">
           <div class="space"></div>
           <form >
                 <label htmlFor='name'>Name</label>
@@ -69,13 +69,17 @@ export default {
       if(this.name.length === 0 || this.email.length === 0 || this.message.length === 0) {
         alert(result.data.msg);
       }
+      //success
       if(result.status == 200) {
         alert(result.data.msg);
 
+        //reset the form
         this.name = '',
         this.email = '',
         this.message = ''
-      } else if(result.status == 400) {
+      }
+      //failure
+      else if(result.status == 400) {
         alert(result.data.msg);
       }
       
@@ -94,7 +98,7 @@ export default {
     min-height: 100vh;
 }
 
-.central-form{
+.parent-container{
     max-width: 1100px;
     padding: 10px;
     display: flex;
@@ -105,23 +109,23 @@ export default {
     background-color: #1f2235;
 }
 
-.central-form h2{
+.parent-container h2{
     color: white;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
 }
 
-.back-form{
+.contact-form{
     width: 400px;
     margin: 0 auto;
 }
 
-.back-form .space{
+.contact-form .space{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.central-form form{
+.parent-container form{
     width: auto;
     display: flex;
     color: #111;
