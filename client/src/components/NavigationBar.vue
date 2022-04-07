@@ -1,8 +1,8 @@
 <template>
   <header>
-    <div class="parent-container">
-      <div class="container">
-        <div class="icon">
+    <div class="container">
+      <div class="row">
+        <div class="brand-name">
           <a href="" class="logo">
             <p>PORTFOLIO</p>
           </a>
@@ -12,6 +12,7 @@
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -27,14 +28,14 @@ export default {
 </script>
 
 <style scoped>
-.parent-container {
+.container {
   max-width: 1140px;
   margin: auto;
 }
 p {
     color: darkorange;
 }
-.container {
+.row {
   display: flex;
   flex-wrap: wrap;
 }
@@ -46,15 +47,16 @@ header {
   padding: 0px 15px;
   z-index: 11;
 }
-header .container {
-  justify-content: space-between;
-  align-items: center;
-}
 header .fixed {
   background-color: black;
   position: fixed;
 }
-header .icon a {
+
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand-name a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
@@ -62,6 +64,7 @@ header .icon a {
   text-transform: uppercase;
   position: relative;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -72,13 +75,13 @@ nav ul li {
   display: inline-block;
 }
 nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
   color: darkorange;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 10px;
-  display: block;
-  padding: 15px;
-  text-decoration: none;
 }
 nav.navbar ul li a {
   position: relative;
@@ -86,6 +89,7 @@ nav.navbar ul li a {
 nav.navbar ul li a {
   transition: all 1s;
 }
+
 nav.navbar ul li a:after {
   text-align: left;
   margin: 0;

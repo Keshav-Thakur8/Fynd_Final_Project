@@ -1,10 +1,11 @@
 <template>
 <div>
-    <NavigationBar />
-    <HomeSection />
-    <AboutMe />
-    <SkillsSection />
-    <ContactSection />
+  <NavigationBar />
+  <HomeSection />
+  <AboutMe />
+  <SkillsSection />
+  <ProjectSection />
+  <ContactSection />
 </div>
     
 </template>
@@ -14,8 +15,8 @@ import NavigationBar from './components/NavigationBar.vue'
 import HomeSection from './components/HomeSection.vue'
 import AboutMe from './components/AboutMe.vue'
 import SkillsSection from './components/SkillsSection.vue'
+import ProjectSection from './components/ProjectSection.vue'
 import ContactSection from './components/ContactSection.vue'
-
 export default {
   name: 'App',
   components: {
@@ -23,7 +24,9 @@ export default {
     HomeSection,
     AboutMe,
     SkillsSection,
-    ContactSection,
+    ProjectSection,
+    ContactSection
+  
   }
 }
 </script>

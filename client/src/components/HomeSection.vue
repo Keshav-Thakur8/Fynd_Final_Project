@@ -1,22 +1,17 @@
 <template>
-  <div class="parent-container" id="home">
+  <div class="home-container" id="home">
     <div class="profile-container">
       <div class="profile-parent">
         <div class="profile-details">
           <div class="colz">
             <div class="colz-icon">
-              <a
-                href="https://www.linkedin.com/in/keshav-kumar-thakur-1751011b6"
-              >
+              <a href="https://www.linkedin.com/in/keshav-kumar-thakur-1751011b6" target="_blank">
                 <i className="fab fa-linkedin"></i>
               </a>
-              <a href="https://www.instagram.com/keshav8_thakur/">
+              <a href="https://www.instagram.com/keshav8_thakur/" target="_blank">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="https://github.com/Keshav-Thakur8">
+              <a href="https://github.com/Keshav-Thakur8" target="_blank">
                 <i className="fab fa-github"></i>
               </a>
             </div>
@@ -71,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-.parent-container {
+.home-container {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -113,16 +108,17 @@ export default {
   color: #ffffff;
 }
 
+.highlighted-text {
+  color: darkorange;
+}
+
 .profile-role-tagline {
   font-size: 19px;
   margin: 5px 0 0 0;
   font-family: "Poppins Light";
 }
+
 .profile-options .highlighted-btn {
-  background-color: darkorange;
-  color: white;
-  align-items: center;
-  justify-content: center;
   padding: 10px 20px;
   font-weight: 500;
   margin-top: 15px;
@@ -130,11 +126,13 @@ export default {
   width: 160px;
   border: 2px solid darkorange;
   font-size: 18px;
-  border-radius: 20px; 
+  border-radius: 20px;
+  background-color: darkorange;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
-.highlighted-text {
-  color: darkorange;
-}
+
 .profile-options .highlighted-btn:hover {
   color: #1f2235;
   background-color: white;

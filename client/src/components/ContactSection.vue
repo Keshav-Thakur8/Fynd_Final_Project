@@ -1,7 +1,7 @@
 <template>
   <div class="main-container" id="contact">
       <ScreenHeading title="Contact Me" subHeading="Keep In Touch" />
-    <div class="parent-container">
+    <div class="central-form">
       <div class="col">
           <h2 className="title">
             <v-typical class="blink"
@@ -9,20 +9,17 @@
             :loop="Infinity"
             :wrapper="'h3'"></v-typical>
           </h2>
-        <a href="https://www.linkedin.com/in/keshav-kumar-thakur-1751011b6">
+        <a href="https://www.linkedin.com/in/keshav-kumar-thakur-1751011b6" target="_blank">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
-        <a href="https://www.instagram.com/keshav8_thakur/">
+        <a href="https://www.instagram.com/keshav8_thakur/" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://github.com/Keshav-Thakur8">
+        <a href="https://github.com/Keshav-Thakur8" target="_blank">
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <div class="contact-form">
+      <div class="back-form">
           <div class="space"></div>
           <form >
                 <label htmlFor='name'>Name</label>
@@ -69,19 +66,16 @@ export default {
       if(this.name.length === 0 || this.email.length === 0 || this.message.length === 0) {
         alert(result.data.msg);
       }
-      //success
       if(result.status == 200) {
         alert(result.data.msg);
 
-        //reset the form
         this.name = '',
         this.email = '',
         this.message = ''
-      }
-      //failure
-      else if(result.status == 400) {
+      } else if(result.status == 400) {
         alert(result.data.msg);
-      } 
+      }
+      
     }
   },
   components: {
@@ -97,34 +91,34 @@ export default {
     min-height: 100vh;
 }
 
-.parent-container{
-  margin: 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #1f2235;
+.central-form{
     max-width: 1100px;
     padding: 10px;
     display: flex;
-    border-radius: 12px; 
+    border-radius: 12px;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
 }
 
-.parent-container h2{
+.central-form h2{
     color: white;
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
 }
 
-.contact-form{
+.back-form{
     width: 400px;
     margin: 0 auto;
 }
 
-.contact-form .space{
+.back-form .space{
     width: 100%;
     margin-bottom: 20px;
 }
 
-.parent-container form{
+.central-form form{
     width: auto;
     display: flex;
     color: #111;
@@ -164,18 +158,25 @@ input:focus{
 }
 
 form button{
-    background-color: #1f2235;
-    color: white;
-    align-items: center;
-    justify-content: center;
     margin-top: 15px;
     padding: 5px;
     outline: none;
     width: 160px;
     border: 2px solid darkorange;
     font-size: 18px;
-    border-radius: 19px;  
+    border-radius: 19px;
+    background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
+
+form button:hover{
+    background-color: #1f2235;
+    transition: all ease 1s;
+    border: 2px solid #1f2235;
+}
+
 .img-back{
     flex: 1;
     align-self: center;
@@ -185,11 +186,7 @@ form button{
 form{
     flex: 0.9;
 }
-form button:hover{
-    background-color: #1f2235;
-    transition: all ease 1s;
-    border: 2px solid #1f2235;
-}
+
 button .load{
     width: 100%;
 }
@@ -216,4 +213,5 @@ button .load img{
     opacity: 0;
   }
 }
+
 </style>
