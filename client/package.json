@@ -10,9 +10,12 @@
   "dependencies": {
     "axios": "^0.26.1",
     "core-js": "^3.8.3",
+    "v-smooth-scroll": "^2.0.0-beta.2",
     "vue": "^3.2.13",
     "vue-router": "^4.0.13",
+    "vue-toast-notification": "3.0",
     "vue-toasted": "^1.1.28",
+    "vue-toastify": "^1.8.1",
     "vue-typical": "^2.1.0"
   },
   "devDependencies": {

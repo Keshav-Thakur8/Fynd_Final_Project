@@ -99,11 +99,4 @@ nav.navbar ul li a:hover {
   color: cyan;
   z-index: 1;
 }
-nav.navbar ul li a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
 </style>

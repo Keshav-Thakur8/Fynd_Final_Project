@@ -3,7 +3,7 @@
       <ScreenHeading title="Contact Me" subHeading="Keep In Touch" />
     <div class="central-form">
       <div class="col">
-          <h2 className="title">
+          <h2 class="title">
             <v-typical class="blink"
             :steps="['Send Your Message Here 📧', 1000]"
             :loop="Infinity"
@@ -33,7 +33,7 @@
 
                 <div class="send-btn">
                     <button type="button" v-on:click="submitForm()">
-                        <i className='fa fa-paper-plane'/>
+                        <i class='fa fa-paper-plane' />
                     </button>
 
                 </div>
@@ -58,7 +58,8 @@ export default {
   },
   methods: {
     async submitForm() {
-      const result = await axios.post("/api/contact", {
+      /* Connecting with backend */
+      const result = await axios.post(`/contact`, {
         name: this.name,
         email: this.email,
         message: this.message
@@ -68,14 +69,15 @@ export default {
       }
       if(result.status == 200) {
         alert(result.data.msg);
-
+        
+        /* Resets the Form */
         this.name = '',
         this.email = '',
         this.message = ''
-      } else if(result.status == 400) {
+      } 
+      else if(result.status == 400) {
         alert(result.data.msg);
       }
-      
     }
   },
   components: {
@@ -83,6 +85,7 @@ export default {
       ScreenHeading,
   },
 };
+
 </script>
 
 <style scoped>
@@ -158,29 +161,23 @@ input:focus{
 }
 
 form button{
+  cursor: pointer;
     margin-top: 15px;
     padding: 5px;
     outline: none;
     width: 160px;
-    border: 2px solid darkorange;
+    border: 2px solid linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
     font-size: 18px;
     border-radius: 19px;
-    background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);;
+    background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
     color: white;
     align-items: center;
     justify-content: center;
 }
 
 form button:hover{
-    background-color: #1f2235;
+    color: darkorange;
     transition: all ease 1s;
-    border: 2px solid #1f2235;
-}
-
-.img-back{
-    flex: 1;
-    align-self: center;
-    margin-right: 20px;
 }
 
 form{

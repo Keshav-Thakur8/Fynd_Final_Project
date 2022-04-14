@@ -112,10 +112,12 @@ export default {
   border-radius: 20px;
 }
 .about-me-options .highlighted-btn:hover {
-    background-color: #1f2235;
-    transition: all ease 1s;
-    border: 2px solid #1f2235;
+  background-color: #1f2235;
+  transition: all ease 1s;
+  border: 2px solid #1f2235;
 }
+
+/* Responsivness */
 @media only screen and (max-width: 1110px) {
     .about-me-parent {
       width: 88%;

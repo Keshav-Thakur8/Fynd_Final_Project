@@ -11,7 +11,7 @@
             <div class="skill-box">
               <h6>VueJS</h6>
               <div class="skill-bar">
-                <div class="skill-bar-in" style="width: 45%"></div>
+                <div class="skill-bar-in" style="width: 35%"></div>
               </div>
             </div>
 

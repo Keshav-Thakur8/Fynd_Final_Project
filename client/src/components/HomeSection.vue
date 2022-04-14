@@ -131,6 +131,7 @@ export default {
   color: white;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .profile-options .highlighted-btn:hover {
@@ -160,6 +161,7 @@ export default {
   }
 }
 
+/* Responsivness */
 @media screen and (max-width: 1110px) {
   .profile-picture {
     margin: 0 0px 80px;

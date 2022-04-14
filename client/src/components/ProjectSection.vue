@@ -16,10 +16,7 @@
               </p>
               <div class="links">
                 <button type="button">
-                  <a
-                    href="https://github.com/Keshav-Thakur8/Contact-List"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/Keshav-Thakur8/Contact-List" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </button>
@@ -47,18 +44,12 @@
               </p>
               <div class="links">
                 <button type="button">
-                  <a
-                    href="https://github.com/Keshav-Thakur8/city-weather-app"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/Keshav-Thakur8/city-weather-app" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </button>
                 <button type="button">
-                  <a
-                    href="https://keshav-thakur8.github.io/city-weather-app/"
-                    target="_blank"
-                  >
+                  <a href="https://keshav-thakur8.github.io/city-weather-app/" target="_blank">
                     <i class="fa fa-link"></i>
                   </a>
                 </button>
@@ -80,18 +71,12 @@
               </p>
               <div class="links">
                 <button type="button">
-                  <a
-                    href="https://github.com/Keshav-Thakur8/Fynd_Final_Project"
-                    target="_blank"
-                  >
+                  <a href="https://github.com/Keshav-Thakur8/Fynd_Final_Project" target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </button>
                 <button type="button">
-                  <a
-                    href="https://blueberry-pie-73913.herokuapp.com/"
-                    target="_blank"
-                  >
+                  <a href="https://blueberry-pie-73913.herokuapp.com/" target="_blank">
                     <i class="fa fa-link"></i>
                   </a>
                 </button>
@@ -121,7 +106,7 @@ export default {
   max-width: 1100px;
   padding: 10px;
   display: flex;
-  border-radius: 12px;
+  border-radius: 15px 50px;
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-around;
@@ -130,7 +115,7 @@ export default {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border-radius: 12px;
+  border-radius: 15px 50px;
   perspective: 1000px;
 }
 .turn-card-back .links {
@@ -161,6 +146,7 @@ export default {
   color: white;
   transform: rotateY(180deg);
 }
+
 /* turn on hover */
 .turn-card:hover .turn-card-inner {
   transform: rotateY(180deg);
@@ -169,7 +155,7 @@ export default {
 /* Position the front and back side */
 .turn-card-front, .turn-card-back {
   padding: 5px;
-  border-radius: 12px;
+  border-radius: 15px 50px;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -183,4 +169,19 @@ export default {
   background: linear-gradient(158deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
   color: darkorange;
 }
+
+/* Responsivness */
+@media only screen and (max-width: 1110px) {
+    .parent-container {
+      width: 88%;
+    }
+  }
+  @media only screen and (max-width: 466px) {
+    .parent-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+    
+  }
 </style>
