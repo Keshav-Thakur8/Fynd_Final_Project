@@ -86,7 +86,6 @@ export default {
   padding: 250px;
   display: flex;
   align-items: center;
-  color: aliceblue;
 }
 
 .profile-details-name {
@@ -175,7 +174,6 @@ export default {
   .profile-options .btn {
     width: 120px;
     padding: 11px 0;
-    z-index: 700;
   }
 }
 

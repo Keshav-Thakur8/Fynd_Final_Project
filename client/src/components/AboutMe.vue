@@ -92,11 +92,9 @@ export default {
   font-family: "Poppins Bold";
   font-size: 20px;
   font-weight: 1000;
-  margin: 0 0 5px 0;
+  margin: 0 0 10px 0;
 }
 .highlight {
-  display: flex;
-  align-items: center;
   margin: 5px 0;
   font-size: 18px;
 } 

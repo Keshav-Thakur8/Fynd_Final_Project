@@ -43,9 +43,8 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  border-bottom: 1px solid #423940;
+  border-bottom: 1px solid white;
   padding: 0px 15px;
-  z-index: 11;
 }
 header .fixed {
   background-color: black;
@@ -60,7 +59,6 @@ header .brand-name a {
   text-decoration: none;
   font-size: 22px;
   font-weight: 600;
-  color: black;
   text-transform: uppercase;
   position: relative;
 }
@@ -89,14 +87,7 @@ nav.navbar ul li a {
 nav.navbar ul li a {
   transition: all 1s;
 }
-
-nav.navbar ul li a:after {
-  text-align: left;
-  margin: 0;
-  opacity: 0;
-}
 nav.navbar ul li a:hover {
   color: cyan;
-  z-index: 1;
 }
 </style>

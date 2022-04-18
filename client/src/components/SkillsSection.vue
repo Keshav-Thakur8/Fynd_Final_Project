@@ -122,13 +122,4 @@ export default {
   top: 0;
   height: 100%;
 }
-
-.skills .skills-content .skill-box .skill-bar .skill-bar-in span {
-  color: #838383;
-  font-size: 16px;
-  font-weight: 400;
-  position: absolute;
-  right: 0;
-  top: -30px;
-}
 </style>
